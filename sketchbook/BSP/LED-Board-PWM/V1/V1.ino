@@ -1,6 +1,7 @@
 #define LED 4
 #define IR 0
 #define GND_detect 3
+#define BTN 1
 
 // attiny 202
 // use internal clock 8MHZ
