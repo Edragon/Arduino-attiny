@@ -7,25 +7,18 @@ bool flag = false;
 void setup() {
   pinMode(LED, OUTPUT);
   pinMode(BTN, INPUT);
-  
-  analogWrite(LED, 0); // close LED output
+
 }
+
 
 void loop() {
   int buttonState = digitalRead(BTN);
 
   if (buttonState == LOW) {
-    flag = true;
-    //delay(500);
+    digitalWrite(LED, HIGH);
   }
-  
-  if (flag == true) {
-  
-    analogWrite(LED, 255);
-    delay(3000);
-    flag = false;
+  else {
+    digitalWrite(LED, LOW);
   }
 
-  
-  //delay(500);
 }
