@@ -3,7 +3,7 @@ void setup()
 {
   Serial.begin(9600);
 
-
+  // turn on TXD
   pinMode(3, OUTPUT);
   digitalWrite(3, HIGH);
 }

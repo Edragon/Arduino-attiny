@@ -3,10 +3,10 @@
 
 void setup()
 {
-  //Wire.begin(6.7);
+  //Wire.begin(6, 7);
   Wire.begin(7, 6);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("\nI2C Scanner");
   pinMode(3,OUTPUT);
   digitalWrite(3, HIGH);

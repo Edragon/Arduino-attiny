@@ -1,6 +1,6 @@
 
 #include <TM1650.h>
-TM1650 module(7, 6);  // SDA=A4, SCL=A5
+TM1650 module(6, 7);  // 6=SDA=A4, 7=SCL=A5
 
 
 void setup()
